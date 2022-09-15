@@ -9,8 +9,8 @@ gem "rails", "~> 7.0.3"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
-# Use sqlite3 as the database for Active Record
-gem "sqlite3", "~> 1.4"
+# Use PostGrel au lieu de Sqlite as the database for Active Record
+gem 'pg'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
@@ -70,3 +70,10 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+  #Moon started here
+
+gem "sassc-rails"
+gem "simple_form", github: "heartcombo/simple_form"
+gem "font-awesome-sass", "~> 6.1"
+gem "autoprefixer-rails"
